@@ -6,11 +6,13 @@ CREATE TABLE IF NOT EXISTS `Users` (
   `LandLine` VARCHAR(45) NULL,
   `Phone` VARCHAR(45) NOT NULL,
   `Consumption` DECIMAL(10,2) NOT NULL DEFAULT 0.00,
-  `Bill` VARCHAR(45) NOT NULL,
+  `Bill` DECIMAL(10,2) NOT NULL,
   `SubscriptionDate` DATE NOT NULL,
   `Status` ENUM('active', 'inactive') NOT NULL DEFAULT 'active',
   `ServiceID` INT NOT NULL,
   `LocationID` INT NOT NULL,
+  `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`UserID`, `LocationID`),
   CONSTRAINT `fk_Users_Services`
     FOREIGN KEY (`ServiceID`)
