@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS `Locations` (
+  `LocationID` INT NOT NULL AUTO_INCREMENT,
+  `Address` VARCHAR(255) NOT NULL,
+  `City` VARCHAR(45) NOT NULL,
+  `Street` VARCHAR(45) NOT NULL,
+  `Building` VARCHAR(45) NOT NULL,
+  `Floor` VARCHAR(45) NULL,
+  `GoogleMapsURL` VARCHAR(45) NULL,
+  PRIMARY KEY (`LocationID`)
+) ENGINE = InnoDB;
