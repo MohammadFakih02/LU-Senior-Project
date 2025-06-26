@@ -1,0 +1,6 @@
+[submodule "LU-Senior-Project-Backend"]
+	path = LU-Senior-Project-Backend
+	url = https://github.com/MohammadFakih02/LU-Senior-Project-Backend
+[submodule "LU-Senior-Project-Frontend"]
+	path = LU-Senior-Project-Frontend
+	url = https://github.com/MohammadFakih02/LU-Senior-Project-Frontend
